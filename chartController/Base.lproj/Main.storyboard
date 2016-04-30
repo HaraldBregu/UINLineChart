@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Datasource-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="1300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtw-Ns-3Ni">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="1300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJO-I4-Aj2">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="1110"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="987-1h-dg2" customClass="UINLineChart">
+                                                <rect key="frame" x="0.0" y="30" width="400" height="150"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="a12-24-mau"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="datasource" destination="BYZ-38-t0r" id="m4K-nv-tqF"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="I23-ls-TNd"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjg-QB-Tl8" customClass="UINLineChart">
+                                                <rect key="frame" x="0.0" y="210" width="400" height="150"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="ioq-pe-JCD"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="datasource" destination="BYZ-38-t0r" id="ruw-w2-IaX"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8zl-kA-HYI"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-e5-pYb" customClass="UINLineChart">
+                                                <rect key="frame" x="0.0" y="390" width="400" height="150"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="KRP-zA-NoI"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="datasource" destination="BYZ-38-t0r" id="nFq-Mw-KvW"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8rH-WQ-Wkx"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bge-if-sbU" customClass="UINLineChart">
+                                                <rect key="frame" x="0.0" y="570" width="400" height="150"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="E85-T0-bXQ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="datasource" destination="BYZ-38-t0r" id="08c-u2-Niu"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="L5D-zD-dF1"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmO-6E-a0o" customClass="UINLineChart">
+                                                <rect key="frame" x="0.0" y="750" width="400" height="150"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="eMd-Q9-I6j"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="datasource" destination="BYZ-38-t0r" id="Q3E-ik-cZt"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MyK-eb-07O"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhK-MS-M4X" customClass="UINLineChart">
+                                                <rect key="frame" x="0.0" y="930" width="400" height="150"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="Oua-aH-kgo"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="datasource" destination="BYZ-38-t0r" id="4jh-9d-F3v"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="cog-SV-FSY"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="vjg-QB-Tl8" secondAttribute="trailing" id="5qU-vM-AQu"/>
+                                            <constraint firstItem="ae8-e5-pYb" firstAttribute="top" secondItem="vjg-QB-Tl8" secondAttribute="bottom" constant="30" id="7lz-kz-CPl"/>
+                                            <constraint firstItem="987-1h-dg2" firstAttribute="top" secondItem="aJO-I4-Aj2" secondAttribute="top" constant="30" id="AnY-Mx-dXm"/>
+                                            <constraint firstItem="AhK-MS-M4X" firstAttribute="leading" secondItem="aJO-I4-Aj2" secondAttribute="leading" id="Jz5-Mm-dKV"/>
+                                            <constraint firstAttribute="trailing" secondItem="GmO-6E-a0o" secondAttribute="trailing" id="KNn-o7-cVJ"/>
+                                            <constraint firstItem="987-1h-dg2" firstAttribute="leading" secondItem="aJO-I4-Aj2" secondAttribute="leading" id="KcE-O4-aQZ"/>
+                                            <constraint firstItem="vjg-QB-Tl8" firstAttribute="top" secondItem="987-1h-dg2" secondAttribute="bottom" constant="30" id="LSf-HT-ijc"/>
+                                            <constraint firstAttribute="trailing" secondItem="ae8-e5-pYb" secondAttribute="trailing" id="M1D-sm-M6I"/>
+                                            <constraint firstAttribute="trailing" secondItem="987-1h-dg2" secondAttribute="trailing" id="NNW-oU-3KM"/>
+                                            <constraint firstItem="ae8-e5-pYb" firstAttribute="leading" secondItem="aJO-I4-Aj2" secondAttribute="leading" id="aad-sK-YOL"/>
+                                            <constraint firstAttribute="bottom" secondItem="AhK-MS-M4X" secondAttribute="bottom" constant="30" id="d3A-zU-eSt"/>
+                                            <constraint firstItem="bge-if-sbU" firstAttribute="top" secondItem="ae8-e5-pYb" secondAttribute="bottom" constant="30" id="eQt-uP-rgQ"/>
+                                            <constraint firstItem="bge-if-sbU" firstAttribute="leading" secondItem="aJO-I4-Aj2" secondAttribute="leading" id="evu-a0-AVI"/>
+                                            <constraint firstItem="GmO-6E-a0o" firstAttribute="top" secondItem="bge-if-sbU" secondAttribute="bottom" constant="30" id="giY-qp-fcZ"/>
+                                            <constraint firstItem="GmO-6E-a0o" firstAttribute="leading" secondItem="aJO-I4-Aj2" secondAttribute="leading" id="nE5-u0-q7d"/>
+                                            <constraint firstItem="AhK-MS-M4X" firstAttribute="top" secondItem="GmO-6E-a0o" secondAttribute="bottom" constant="30" id="ocT-V3-Wtg"/>
+                                            <constraint firstItem="vjg-QB-Tl8" firstAttribute="leading" secondItem="aJO-I4-Aj2" secondAttribute="leading" id="pBU-Eg-Gsl"/>
+                                            <constraint firstAttribute="trailing" secondItem="bge-if-sbU" secondAttribute="trailing" id="v5r-Dr-Vge"/>
+                                            <constraint firstAttribute="trailing" secondItem="AhK-MS-M4X" secondAttribute="trailing" id="wQl-xu-x6R"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="aJO-I4-Aj2" firstAttribute="top" secondItem="wtw-Ns-3Ni" secondAttribute="top" id="9sg-NG-Kqh"/>
+                                    <constraint firstAttribute="bottom" secondItem="aJO-I4-Aj2" secondAttribute="bottom" id="GSn-xe-SzA"/>
+                                    <constraint firstAttribute="trailing" secondItem="aJO-I4-Aj2" secondAttribute="trailing" id="J7G-Wg-0kQ"/>
+                                    <constraint firstItem="aJO-I4-Aj2" firstAttribute="leading" secondItem="wtw-Ns-3Ni" secondAttribute="leading" id="msz-x9-rW5"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aJO-I4-Aj2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Dxy-Dw-IcO"/>
+                            <constraint firstItem="aJO-I4-Aj2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="750" id="TJ0-wI-mLr"/>
+                            <constraint firstAttribute="trailing" secondItem="wtw-Ns-3Ni" secondAttribute="trailing" id="cvb-rn-iKb"/>
+                            <constraint firstItem="wtw-Ns-3Ni" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qO5-xY-eip"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wtw-Ns-3Ni" secondAttribute="bottom" id="tK9-fP-pv5"/>
+                            <constraint firstItem="wtw-Ns-3Ni" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uzX-NN-XP0"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="1300"/>
+                    <connections>
+                        <outlet property="linechart01" destination="987-1h-dg2" id="u05-49-BLN"/>
+                        <outlet property="linechart02" destination="vjg-QB-Tl8" id="pya-24-kYm"/>
+                        <outlet property="linechart03" destination="ae8-e5-pYb" id="pfm-YM-l6n"/>
+                        <outlet property="linechart04" destination="bge-if-sbU" id="taV-y4-2Px"/>
+                        <outlet property="linechart05" destination="GmO-6E-a0o" id="Whu-yb-N1Y"/>
+                        <outlet property="linechart06" destination="AhK-MS-M4X" id="4hU-Xh-s3I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="659"/>
+        </scene>
+    </scenes>
+</document>
